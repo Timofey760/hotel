@@ -1,0 +1,27 @@
+.russian-flag {
+    #position: absolute;
+    top:0;
+    right: 0;
+    width: 100%; /* Ширина флага */
+    height: 200px; /* Высота флага */
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+.russian-flag div {
+    flex: 1;
+}
+.white {
+    background-color: rgb(235, 233, 233);
+}
+.blue {
+    background-color: #0039A6;
+}
+.red {
+    background-color: #D52B1E;
+}
+
+.navbar {
+    #position: relative;
+    #z-index: 1; /* Устанавливаем z-index для меню */
+}
