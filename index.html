@@ -8,58 +8,50 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">    
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="Elysiumhotellogo3.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Hotel
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="russian-flag">
-                    <div class="white"></div>
-                    <div class="blue"></div>
-                    <div class="red"></div>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body">
+            <div class="container-fluid">
+                <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Jumbotron -->
+        <div class="p-5 text-center bg-body-tertiary">
+            <h1 class="mb-3">Heading</h1>
+            <h4 class="mb-3">Subheading</h4>
+            <a data-mdb-ripple-init class="btn btn-primary" href="" role="button">Call to action</a>
         </div>
-    </div>
+        <!-- Jumbotron -->
+    </header>
+
+
+    <!------------------>
     <div class="container-fluid" style="margin-top: 10px;">
         <div class="row">
             <div class="col">
@@ -70,15 +62,15 @@
             </div>
             <div class="col">
                 <figure class="figure">
-                <img class="img-fluid rounded" src="images/1D8A2862.jpg">
-                <figcaption class="figure-caption">A caption for the above image.</figcaption>
-            </figure>
+                    <img class="img-fluid rounded" src="images/1D8A2862.jpg">
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
             </div>
             <div class="col">
                 <figure class="figure">
-                <img class="img-fluid rounded" src="images/1D8A2960.jpg">
-                <figcaption class="figure-caption">A caption for the above image.</figcaption>
-            </figure>
+                    <img class="img-fluid rounded" src="images/1D8A2960.jpg">
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
             </div>
 
         </div>
@@ -93,6 +85,17 @@
     </div>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div id="content"></div>
+
+    <script src="script.js">
+
+    </script>
+    <!-- Подключение MDB UI Kit JS -->
+    <script type="module">
+        import {Ripple, initMDB } from  "mdb-ui-kit";
+        initMDB({ Ripple });
+    </script>
 </body>
 
 </html>
