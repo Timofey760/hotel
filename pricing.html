@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс-лист гостиницы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .price-list {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .price-list h1 {
+            margin-bottom: 20px;
+        }
+        .price-list table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .price-list table, th, td {
+            border: 1px solid #ddd;
+        }
+        .price-list th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        .price-list th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="price-list">
+        <h1>Прайс-лист гостиницы</h1>
+        <table>
+            <tr>
+                <th>Тип номера</th>
+                <th>Цена за ночь</th>
+            </tr>
+            <tr>
+                <td>Одноместный номер</td>
+                <td>3000 руб.</td>
+            </tr>
+            <tr>
+                <td>Двухместный номер</td>
+                <td>5000 руб.</td>
+            </tr>
+            <tr>
+                <td>Люкс</td>
+                <td>8000 руб.</td>
+            </tr>
+            <tr>
+                <td>Семейный номер</td>
+                <td>7000 руб.</td>
+            </tr>
+        </table>
+        <p>Цены указаны в рублях и включают все налоги и сборы.</p>
+    </div>
+</body>
+</html>
