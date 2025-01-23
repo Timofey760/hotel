@@ -97,5 +97,206 @@
             <p class="author">- Ольга</p>
         </div>
     </div>
+<!--раздел с отзывами и оценками на платворме ТрипАдвисор-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы об отеле</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-section {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .rating-bar {
+            width: 80%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-left: 10px;
+        }
+        .rating-bar div {
+            height: 100%;
+            background-color: #4caf50;
+        }
+        .tripadvisor {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .tripadvisor img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="review-section">
+        <h2>Отзывы об отеле</h2>
+        <p>Оценка: 7,7 (Очень хорошо)</p>
+        <p>Основано на 253 отзывах гостей из разных стран</p>
+
+        <div class="rating">
+            <span>Чистота</span>
+            <div class="rating-bar">
+                <div style="width: 77%;"></div>
+            </div>
+            <span>7,7</span>
+        </div>
+
+        <div class="rating">
+            <span>Средства гигиены</span>
+            <div class="rating-bar">
+                <div style="width: 72%;"></div>
+            </div>
+            <span>7,2</span>
+        </div>
+
+        <div class="rating">
+            <span>Расположение</span>
+            <div class="rating-bar">
+                <div style="width: 87%;"></div>
+            </div>
+            <span>8,7</span>
+        </div>
+
+        <div class="rating">
+            <span>Питание</span>
+            <div class="rating-bar">
+                <div style="width: 63%;"></div>
+            </div>
+            <span>6,3</span>
+        </div>
+
+        <div class="rating">
+            <span>Цена/Качество</span>
+            <div class="rating-bar">
+                <div style="width: 68%;"></div>
+            </div>
+            <span>6,8</span>
+        </div>
+
+        <div class="rating">
+            <span>Номер</span>
+            <div class="rating-bar">
+                <div style="width: 64%;"></div>
+            </div>
+            <span>6,4</span>
+        </div>
+
+        <div class="rating">
+            <span>Обслуживание</span>
+            <div class="rating-bar">
+                <div style="width: 67%;"></div>
+            </div>
+            <span>6,7</span>
+        </div>
+
+        <div class="rating">
+            <span>Качество Wi-Fi</span>
+            <div class="rating-bar">
+                <div style="width: 86%;"></div>
+            </div>
+            <span>8,6</span>
+        </div>
+
+        <div class="tripadvisor">
+            <p>TripAdvisor</p>
+            <img src="Tripadvisor.jpg" alt="TripAdvisor">
+            <p>12 отзывов</p>
+        </div>
+    </div>
+</body>
+<!--раздел с отзывами и оценками на платворме ТрипАдвисор-->
+
+
+<!--Раздел где можно оставить свой отзыв-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить отзыв</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .review-form h2 {
+            text-align: center;
+        }
+        .review-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .review-form input, .review-form textarea, .review-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .review-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="review-form">
+        <h2>Оставить отзыв</h2>
+        <form action="#" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Ваша оценка:</label>
+            <select id="rating" name="rating" required>
+                <option value="">Выберите оценку</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="review">Ваш отзыв:</label>
+            <textarea id="review" name="review" rows="5" required></textarea>
+
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </div>
+</body>
+</html>
+<!--Раздел где можно оставить свой отзыв-->
 </body>
 </html>
