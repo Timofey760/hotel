@@ -1,6 +1,6 @@
 
 // Создаем новый элемент абзаца
-var paragraph = document.createElement("p");
+var paragraph = document.getElementById('info01')
 // Устанавливаем текст абзаца
 paragraph.innerHTML = `Elysium Hotel на Пушкинской – это уютный мини-отель c возможностью почасовой оплаты!<br>
                        Мы гарантируем Вам комфорт и полную конфиденциальность встреч, и всё это по выгодной цене.<br>

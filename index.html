@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap 5 Example</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="nav.css">
+    <!-- Bootstrap CSS -->          
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">    
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
+    <div class="container-fluid">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-body">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarExample01"
-                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                <a class="navbar-brand" href="#">
+                    <img src="path/to/your/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarExample01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
@@ -39,20 +41,21 @@
                 </div>
             </div>
         </nav>
+
         <!-- Navbar -->
 
-        <!-- Jumbotron -->
+<!--
+         
         <div class="p-5 text-center bg-body-tertiary">
             <h1 class="mb-3">Heading</h1>
             <h4 class="mb-3">Subheading</h4>
             <a data-mdb-ripple-init class="btn btn-primary" href="" role="button">Call to action</a>
         </div>
-        <!-- Jumbotron -->
-    </header>
+-->
+    
+    <!--
 
-
-    <!-----------nav bar------->
-    <div class="container-fluid" style="margin-top: 10px;">
+    <div style="margin-top: 10px;">
         <div class="row">
             <div class="col">
                 <figure class="figure">
@@ -82,20 +85,17 @@
 
 
         </div>
-    </div>
+    </div>-->
+    <div id="info01"></div>
     <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <div id="content"></div>
-
+</div>
     <script src="script.js">
 
     </script>
-    <!-- Подключение MDB UI Kit JS -->
-    <script type="module">
-        import {Ripple, initMDB } from  "mdb-ui-kit";
-        initMDB({ Ripple });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

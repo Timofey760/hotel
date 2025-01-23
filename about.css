@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.header img {
+    width: 200px;
+    height: 200px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.additional-image {
+    margin-top: 20px;
+}
+
+.additional-image img {
+    width: 400px;
+    height: 180px;
+}
+
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.reviews h2 {
+    text-align: center;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.review .author {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+
+
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+    */
+
+.review-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.rating-bar div {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+.tripadvisor {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tripadvisor img {
+    width: 100px;
+    height: auto;
+}
+
+
+/*
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+    */
+
+.review-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h2 {
+    text-align: center;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #45a049;
+}
