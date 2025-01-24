@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-.gallery-section {
+/*.gallery-section {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -44,4 +44,22 @@ th, td {
 }
 th {
     background-color: #f0f0f0;
+*/
+
+
+.gallery-section {
+    padding: 20px;
+    text-align: center;
+}
+.date-picker {
+    margin: 20px 0;
+}
+.date-picker input, .date-picker button {
+    margin: 5px;
+}
+.table {
+    margin-top: 20px;
+}
+.table th, .table td {
+    vertical-align: middle;
 }

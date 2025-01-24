@@ -1,3 +1,15 @@
+/* Пример стилей для логотипа */
+.logo {
+    width: 150px; /* Ширина логотипа */
+    height: auto; /* Автоматическая высота */
+}
+
+#info01 {
+    margin-top: 100px; /* Опускаем текст на 100 пикселей вниз */
+    text-align: center; /* Центрируем текст */
+}
+
+
 .russian-flag {
     #position: absolute;
     top:0;

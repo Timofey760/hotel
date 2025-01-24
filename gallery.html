@@ -10,6 +10,8 @@
     <!-- Подключение Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" >-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" >
     <style>
 
     </style>
@@ -88,7 +90,11 @@
         </div>
     </div>
 
-    <div class="gallery-section">
+
+
+
+
+    <!--<div class="gallery-section">
         <h2>Доступные номера</h2>
         <p>Укажите даты поездки, и мы покажем вам актуальные цены</p>
         <div class="date-picker">
@@ -136,6 +142,107 @@
             </tbody>
         </table>
     </div>
+-->
+
+
+
+
+
+
+
+<!--
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <table class="table table-bordered table-hover text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Заголовок 1</th>
+                            <th>Заголовок 2</th>
+                            <th>Заголовок 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Данные 1</td>
+                            <td>Данные 2</td>
+                            <td>Данные 3</td>
+                        </tr>
+                        <tr>
+                            <td>Данные 4</td>
+                            <td>Данные 5</td>
+                            <td>Данные 6</td>
+                        </tr>
+                        <tr>
+                            <td>Данные 7</td>
+                            <td>Данные 8</td>
+                            <td>Данные 9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>-->
+    <div class="container">
+        <div class="gallery-section">
+            <h2>Доступные номера</h2>
+            <p>Укажите даты поездки, и мы покажем вам актуальные цены</p>
+            <div class="date-picker">
+                <input type="date" id="start-date" class="form-control" placeholder="Дата заезда">
+                <input type="date" id="end-date" class="form-control" placeholder="Дата выезда">
+                <button class="btn btn-primary" onclick="showPrices()">Показать цены</button>
+            </div>
+            <p id="date-message">Даты не выбраны</p>
+            <p>Если не знаете конкретные даты, выберите примерные числа, чтобы сориентироваться по цене.</p>
+
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Тип номера</th>
+                        <th>Описание</th>
+                        <th>Цена</th>
+                        <th>Доступность</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Одноместный номер</td>
+                        <td>Уютный номер с одной кроватью</td>
+                        <td>3000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                    <tr>
+                        <td>Двухместный номер</td>
+                        <td>Номер с двумя кроватями</td>
+                        <td>5000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                    <tr>
+                        <td>Люкс</td>
+                        <td>Роскошный номер с видом на море</td>
+                        <td>8000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                    <tr>
+                        <td>Семейный номер</td>
+                        <td>Большой номер с собственной кухней</td>
+                        <td>10000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Подключаем Bootstrap 5 JS и зависимости -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showPrices() {
+            // Ваш код для отображения цен
+            alert('Цены обновлены!');
+        }
+    </script>
 
     <script>
         function showPrices() {
