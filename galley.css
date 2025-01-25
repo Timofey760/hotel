@@ -45,7 +45,14 @@ th, td {
 th {
     background-color: #f0f0f0;
 */
-
+.logo {
+    width: 150px; /* Ширина логотипа */
+    height: auto; /* Автоматическая высота */
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+}
 
 .gallery-section {
     padding: 20px;
@@ -63,3 +70,4 @@ th {
 .table th, .table td {
     vertical-align: middle;
 }
+

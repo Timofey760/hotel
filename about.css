@@ -37,6 +37,7 @@ body {
 
 .reviews {
     margin-top: 20px;
+    margin: auto;
     text-align: left;
     max-width: 600px;
 }
@@ -47,7 +48,7 @@ body {
 
 .review {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 10px;    
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

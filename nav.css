@@ -1,10 +1,11 @@
 .navbar {
-    background: url('path/to/your/image.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('oformlenie/header.jpg') no-repeat center center;
+    #background-size: cover;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    height: 150px;
+    z-index: 1;
 }
 .navbar-brand img {
     height: 40px;
@@ -17,7 +18,7 @@
     background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон для меню */
 }
 .navbar-collapse.show {
-    display: block;
+    display:block;
 }
 .content {
     margin-top: 80px; /* Высота навигационной панели */
