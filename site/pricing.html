@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прайс-лист гостиницы</title>
-    
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="pricing.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -74,6 +73,49 @@
             <p>Цены указаны в рублях и включают все налоги и сборы.</p>
         </div>
     </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Форма бронирования номера</h2>
+        <form id="bookingForm" action="php/booking.php" method="POST">
+            <div class="form-group">
+                <label for="clientName">Имя клиента</label>
+                <input type="text" class="form-control" id="clientName" name="clientName" placeholder="Введите ваше имя">
+            </div>
+            <div class="form-group">
+                <label for="clientPhone">Номер телефона клиента</label>
+                <input type="tel" class="form-control" id="clientPhone" name="clientPhone" placeholder="Введите ваш номер телефона">
+            </div>
+            <div class="form-group">
+                <label for="clientEmail">Email клиента</label>
+                <input type="email" class="form-control" id="clientEmail" name="clientEmail" placeholder="Введите ваш email">
+            </div>
+            <div class="form-group">
+                <label for="checkInDate">Дата заселения</label>
+                <input type="date" class="form-control" id="checkInDate" name="datearrive">
+            </div>
+            <div class="form-group">
+                <label for="checkOutDate">Дата выселения</label>
+                <input type="date" class="form-control" id="checkOutDate" name="datedepartment">
+            </div>
+            <div class="form-group">
+                <label for="roomClass">Класс номера</label>
+                <select class="form-control" id="roomClass" name ="apartmentclass">
+                    <option value="vip">VIP</option>
+                    <option value="comfort">Comfort</option>
+                    <option value="standard">Standard</option>
+                </select>
+            </div>
+            <!--
+            <div class="form-group">
+                <label for="additionalInfo">Дополнительная информация</label>
+                <textarea class="form-control" id="additionalInfo" name="additionalinfo" rows="3" placeholder="Оставьте вашу текстовую информацию"></textarea>
+            </div>
+            -->
+            <button type="submit" class="btn btn-primary">Забронировать</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
