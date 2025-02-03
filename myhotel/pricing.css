@@ -1,0 +1,53 @@
+#body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.price-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price-list h1 {
+    margin-bottom: 20px;
+}
+
+.price-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.price-list table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+.price-list th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+.price-list th {
+    background-color: #f2f2f2;
+}
+
+.logo {
+    width: 150px; /* Ширина логотипа */
+    height: auto; /* Автоматическая высота */
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+}

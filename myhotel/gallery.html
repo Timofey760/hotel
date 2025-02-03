@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="nav.css">
+    <!-- Подключение Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" >-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" >
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="Elysiumhotellogo3.png" alt="Логотип сайта" class="logo">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light" >
+          
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mе-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        </nav>
+        <!-- Navbar -->
+
+
+    <div class="container-fluid" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col">
+                <!-- Thumbnails -->
+                <div class="thumbnails">
+                    <div class="thumbnail" style="background-image: url('images/гос1.jpg');" data-index="0"></div>
+                    <div class="thumbnail" style="background-image: url('images/гос2.jpg');" data-index="1"></div>
+                    <div class="thumbnail" style="background-image: url('images/гос3.jpg');" data-index="2"></div>
+                    <div class="thumbnail" style="background-image: url('images/гос4.jpg');" data-index="3"></div>
+                    <div class="thumbnail" style="background-image: url('images/гос5.jpg');" data-index="4"></div>
+                    <div class="thumbnail" style="background-image: url('images/гос6.jpg');" data-index="5"></div>
+                    <div class="thumbnail" style="background-image: url('images/гос7.jpg');" data-index="6"></div>
+                    <!-- Добавьте больше миниатюр по мере необходимости -->
+                </div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <div class="modal-content">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/гос1.jpg" alt="Image 1"></div>
+                                <div class="swiper-slide"><img src="images/гос2.jpg" alt="Image 2"></div>
+                                <div class="swiper-slide"><img src="images/гос3.jpg" alt="Image 3"></div>
+                                <div class="swiper-slide"><img src="images/гос4.jpg" alt="Image 4"></div>
+                                <div class="swiper-slide"><img src="images/гос5.jpg" alt="Image 5"></div>
+                                <div class="swiper-slide"><img src="images/гос6.jpg" alt="Image 6"></div>
+                                <div class="swiper-slide"><img src="images/гос7.jpg" alt="Image 7"></div>
+                                <!-- Добавьте больше слайдов по мере необходимости -->
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--<div class="gallery-section">
+        <h2>Доступные номера</h2>
+        <p>Укажите даты поездки, и мы покажем вам актуальные цены</p>
+        <div class="date-picker">
+            <input type="date" id="start-date" placeholder="Дата заезда">
+            <input type="date" id="end-date" placeholder="Дата выезда">
+            <button onclick="showPrices()">Показать цены</button>
+        </div>
+        <p id="date-message">Даты не выбраны</p>
+        <p>Если не знаете конкретные даты, выберите примерные числа, чтобы сориентироваться по цене.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Тип номера</th>
+                    <th>Описание</th>
+                    <th>Цена</th>
+                    <th>Доступность</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Одноместный номер</td>
+                    <td>Уютный номер с одной кроватью</td>
+                    <td>3000 руб.</td>
+                    <td>Доступен</td>
+                </tr>
+                <tr>
+                    <td>Двухместный номер</td>
+                    <td>Номер с двумя кроватями</td>
+                    <td>5000 руб.</td>
+                    <td>Доступен</td>
+                </tr>
+                <tr>
+                    <td>Люкс</td>
+                    <td>Роскошный номер с видом на море</td>
+                    <td>8000 руб.</td>
+                    <td>Доступен</td>
+                </tr>
+                <tr>
+                    <td>Семейный номер</td>
+                    <td>Большой номер с собственной кухней</td>
+                    <td>10000 руб.</td>
+                    <td>Доступен</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+-->
+
+
+
+
+
+
+
+<!--
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <table class="table table-bordered table-hover text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Заголовок 1</th>
+                            <th>Заголовок 2</th>
+                            <th>Заголовок 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Данные 1</td>
+                            <td>Данные 2</td>
+                            <td>Данные 3</td>
+                        </tr>
+                        <tr>
+                            <td>Данные 4</td>
+                            <td>Данные 5</td>
+                            <td>Данные 6</td>
+                        </tr>
+                        <tr>
+                            <td>Данные 7</td>
+                            <td>Данные 8</td>
+                            <td>Данные 9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>-->
+    <div class="container">
+        <div class="gallery-section">
+            <h2>Доступные номера</h2>
+            <p>Укажите даты поездки, и мы покажем вам актуальные цены</p>
+            <div class="date-picker">
+                <input type="date" id="start-date" class="form-control" placeholder="Дата заезда">
+                <input type="date" id="end-date" class="form-control" placeholder="Дата выезда">
+                <button class="btn btn-primary" onclick="showPrices()">Показать цены</button>
+            </div>
+            <p id="date-message">Даты не выбраны</p>
+            <p>Если не знаете конкретные даты, выберите примерные числа, чтобы сориентироваться по цене.</p>
+
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Тип номера</th>
+                        <th>Описание</th>
+                        <th>Цена</th>
+                        <th>Доступность</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Одноместный номер</td>
+                        <td>Уютный номер с одной кроватью</td>
+                        <td>3000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                    <tr>
+                        <td>Двухместный номер</td>
+                        <td>Номер с двумя кроватями</td>
+                        <td>5000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                    <tr>
+                        <td>Люкс</td>
+                        <td>Роскошный номер с видом на море</td>
+                        <td>8000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                    <tr>
+                        <td>Семейный номер</td>
+                        <td>Большой номер с собственной кухней</td>
+                        <td>10000 руб.</td>
+                        <td>Доступен</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Подключаем Bootstrap 5 JS и зависимости -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showPrices() {
+            // Ваш код для отображения цен
+            alert('Цены обновлены!');
+        }
+    </script>
+
+    <script>
+        function showPrices() {
+            const startDate = document.getElementById('start-date').value;
+            const endDate = document.getElementById('end-date').value;
+            if (startDate && endDate) {
+                document.getElementById('date-message').textContent = `Цены для периода с ${startDate} по ${endDate}`;
+            } else {
+                document.getElementById('date-message').textContent = 'Даты не выбраны';
+            }
+        }
+    </script>
+
+    <!-- Bootstrap CSS -->
+
+    <!-- Подключение Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Открытие модального окна при клике на миниатюру
+        document.querySelectorAll('.thumbnail').forEach(function (thumbnail) {
+            thumbnail.addEventListener('click', function () {
+                var index = this.getAttribute('data-index');
+                swiper.slideTo(index);
+                document.getElementById('myModal').style.display = "block";
+                document.querySelector('.swiper-container').classList.add('active');
+            });
+        });
+
+        // Закрытие модального окна
+        document.querySelector('.close').addEventListener('click', function () {
+            document.getElementById('myModal').style.display = "none";
+            document.querySelector('.swiper-container').classList.remove('active');
+        });
+
+        // Закрытие модального окна при клике вне контента
+        window.addEventListener('click', function (event) {
+            if (event.target == document.getElementById('myModal')) {
+                document.getElementById('myModal').style.display = "none";
+                document.querySelector('.swiper-container').classList.remove('active');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<!--раздел с свободными номерами-->
+<!--
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея доступных номеров</title>
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+<body>
+    
+</body>
+</html>-->
+<!--раздел с свободными номерами-->
+
+</html>
